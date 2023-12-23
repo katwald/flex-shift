@@ -10,7 +10,7 @@ console.log('yeee',fetchBookings())
   return (
 
     <div className="App">
-      <Button primary = "primary">
+      <Button primary>
       button
         </Button>
     </div>

@@ -4,17 +4,17 @@ import classNames from "classnames";
 import "./index.scss";
 
 interface Props{
-    primary?: string;
-    secondary?: string;
-    warning?:string;
-    outline?: string;
-    danger?: string;
-    disabled?: string;
-    rounded?:string;
-    small?:string;
-    medium?:string;
-    large?:string;
-    icon?:string;
+    primary?: boolean;
+    secondary?: boolean;
+    warning?:boolean;
+    outline?: boolean;
+    danger?: boolean;
+    disabled?: boolean;
+    rounded?:boolean;
+    small?:boolean;
+    medium?:boolean;
+    large?:boolean;
+    icon?:boolean;
     children?: React.ReactNode|string;
     rest?:string;
 }
