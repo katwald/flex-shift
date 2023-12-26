@@ -1,16 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 
-import  Button  from '../';
+import  Button  from ".";
 
 const meta = {
-  title: 'Button Component',
+  title: "Button Component",
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas
-    layout: 'centered',
+    layout: "centered",
   },
   // This component will have an automatically generated Autodocs
-  tags: ['autodocs'],
+  tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -20,14 +20,14 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     primary: true,
-    children: 'Primary Button',
+    children: "Primary Button",
   },
 };
 
 export const Secondary: Story = {
   args: {
     secondary: true,
-    children: 'Secondary Button',
+    children: "Secondary Button",
   },
 };
 
@@ -36,6 +36,6 @@ export const Secondary: Story = {
 export const Disabled: Story = {
   args: {
     disabled: true,
-    children: 'Disabled',
+    children: "Disabled",
   },
 };
