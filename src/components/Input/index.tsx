@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import "./styles.scss";
+import "./style.scss";
 
 interface InputProps{
   id?: string;

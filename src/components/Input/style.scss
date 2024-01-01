@@ -1,5 +1,6 @@
 .input{
-    min-width: auto;
+    // min-width: auto;
+    margin-bottom:12px;
     &__label{
         display:block;
         &__disabled {
@@ -7,8 +8,8 @@
     }
     }
     &__field{
-        width: 100%;
-        height: 30px;
+        width: 290px;
+        height: 42px;
         border: 2px solid grey;
         border-radius: 5px;
         text-align:center;
@@ -16,7 +17,10 @@
             border:     2px solid rgb(218, 218, 218);
     }
     &__error{
-        border: 1px solid red;
+        border: 2px solid red;
+    }
+    &__success{
+        border: 2px solid green;
     }
 }
 &__message{
