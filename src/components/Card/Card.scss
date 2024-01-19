@@ -1,0 +1,43 @@
+@import "../../styles/_variables";
+
+.card {
+  width: 375px;
+  height: 150px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border-bottom: 1px solid $light-gray;
+    &__title {
+      font-size: 14px;
+      font-weight: bold;
+      padding: 2px;
+    }
+    &__sub-title {
+      font-size: 12px;
+      color: $light-gray;
+    }
+    &__avatar {
+      text-align: center;
+      width: 30%;
+    }
+  }
+  &__body {
+    padding: 8px;
+    height: 60px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 8px 0;
+    &__chip {
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 100px;
+      text-align: center;
+    }
+  }
+}

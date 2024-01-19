@@ -1,11 +1,10 @@
-import {combineReducers} from 'redux'
-import bookingReducer from './bookingReducer'
-
+import { combineReducers } from "redux";
+import bookingReducer from "./bookingReducer";
 
 const reducers = combineReducers({
-    bookingData: bookingReducer
-})
+  bookingData: bookingReducer,
+});
 
-export default reducers
+export default reducers;
 
-export type RootState = ReturnType<typeof reducers>
+export type RootState = ReturnType<typeof reducers>;

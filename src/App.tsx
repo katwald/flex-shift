@@ -4,6 +4,7 @@ import Input from "./components/Input";
 import Select from "./components/Select";
 
 import Button from "./components/Button";
+import Card from "./components/Card";
 import "./App.scss";
 function App() {
   const { fetchBookings } = useActions();
@@ -30,6 +31,15 @@ function App() {
         <Select
           onChange={() => console.log("first")}
           options={["Venue1", "Venue2", "venue3"]}
+        />
+        <Card
+          title="Venue 1"
+          tag="normal work"
+          onClick={() => console.log("clicked")}
+          bookingStart={new Date()}
+          bookingEnd={new Date()}
+          bookingDescription="this is bla bla description"
+          assignedEmployee={"devendra"}
         />
       </div>
     </div>
