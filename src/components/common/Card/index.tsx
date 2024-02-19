@@ -1,5 +1,5 @@
 import React from "react";
-import { readableDate } from "../../helpers/readableDate";
+import { readableDate } from "../../../helpers/readableDate";
 import { HiArrowLongRight, HiOutlineUserCircle } from "react-icons/hi2";
 
 import "./Card.scss";
