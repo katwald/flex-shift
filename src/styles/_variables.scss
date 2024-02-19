@@ -1,16 +1,12 @@
-
-
-
 // theme colors
-$dark:rgb(46, 45, 45);
-$light:#fff;
-$primary:#2696a0;
+$dark: rgb(46, 45, 45);
+$light: #fff;
+$primary: #2696a0;
 $secondary: #6d837f;
 $danger: #d32752;
 $warning: #f6c31c;
 $light-gray: rgb(157, 156, 156);
 $info: rgb(67, 67, 212);
-
 
 // spacing
 $spacing-md: 16px;
@@ -20,16 +16,12 @@ $spacing-lg: 32px;
 $borderRadius: 12px;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 
 // font sizes
 $base-font-sizes: 1rem;
 
-// @mixin breakpoint($point){
-//     @if $point == md{
-//         //768px
-//         @media(min-width:48em){
-//             @content
-//         }
-//     }
-// }
+/* Using SCSS variables to store breakpoints */
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+}

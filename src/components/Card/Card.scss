@@ -1,43 +1,67 @@
 @import "../../styles/_variables";
 
 .card {
-  width: 375px;
-  height: 150px;
-  border: 1px solid black;
-  padding: 5px;
+  width: 98vw;
+  max-width: 800px;
+  height: 190px;
+  border: 1px solid rgb(194, 193, 193);
+  padding: 8px;
   border-radius: 5px;
+  margin: 8px 0;
+  box-shadow: 2px 2px 8px rgb(194, 193, 193);
   &__header {
     display: flex;
     justify-content: space-between;
     padding: 2px;
     border-bottom: 1px solid $light-gray;
     &__title {
-      font-size: 14px;
+      font-size: 1.5rem;
       font-weight: bold;
       padding: 2px;
     }
     &__sub-title {
-      font-size: 12px;
+      font-size: 0.8rem;
       color: $light-gray;
     }
     &__avatar {
       text-align: center;
-      width: 30%;
+      width: 25%;
     }
   }
   &__body {
-    padding: 8px;
-    height: 60px;
+    padding: 12px 0;
+    height: 40%;
+    // overflow: hidden;
+    font-size: 1rem;
+    &__truncate {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
   &__footer {
     display: flex;
     justify-content: space-between;
-    padding: 8px 8px 0;
     &__chip {
+      padding: 4px;
+      width: max-content;
       border: 1px solid black;
       border-radius: 5px;
-      width: 100px;
       text-align: center;
+
+      &__warning {
+        background: rgb(235, 106, 0);
+        color: white;
+        border: none;
+      }
+      &__danger {
+        background-color: red;
+        color: white;
+        border: none;
+      }
+    }
+    &__avatar {
+      stroke-width: 2px;
     }
   }
 }

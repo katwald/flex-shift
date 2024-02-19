@@ -8,7 +8,6 @@ import Card from "./components/Card";
 import "./App.scss";
 function App() {
   const { fetchBookings } = useActions();
-
   console.log("yeee", fetchBookings());
   return (
     <div className="App">
@@ -34,11 +33,11 @@ function App() {
         />
         <Card
           title="Venue 1"
-          tag="normal work"
+          tag={"Warning"}
           onClick={() => console.log("clicked")}
           bookingStart={new Date()}
           bookingEnd={new Date()}
-          bookingDescription="this is bla bla description"
+          bookingDescription="This is bla bla description kdsajfkldasfj aksldjfkdasjf alksdjfsadkfj alksjdfdsajf dfsadaf asdfasf asfdsadfdsa dsafdsaf asdfdsaf "
           assignedEmployee={"devendra"}
         />
       </div>

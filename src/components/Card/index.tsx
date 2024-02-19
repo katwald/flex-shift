@@ -3,10 +3,11 @@ import { readableDate } from "../../helpers/readableDate";
 import { HiArrowLongRight, HiOutlineUserCircle } from "react-icons/hi2";
 
 import "./Card.scss";
+type Tags = "Danger" | "Warning" | "Normal";
 
 type CardProps = {
   title: string;
-  tag: string;
+  tag: Tags;
   onClick: () => void;
   bookingStart: Date;
   bookingEnd: Date;
@@ -44,11 +45,19 @@ const Card: React.FC<CardProps> = ({
           </div>
         )}
       </div>
-      <div className="card__body">{bookingDescription}</div>
+      <div className="card__body">
+        <div className="card__body__truncate">{bookingDescription}</div>
+      </div>
       <div className="card__footer">
-        <div className="card__footer__chip--&{tag}">{tag}</div>
-        <div onClick={onClick} className="card__footer__avatar">
-          <HiArrowLongRight />
+        <div
+          className={`card__footer__chip card__footer__chip__${
+            tag && tag.toLocaleLowerCase()
+          }`}
+        >
+          {tag}
+        </div>
+        <div onClick={onClick}>
+          <HiArrowLongRight className="card__footer__avatar" />
         </div>
       </div>
     </div>
