@@ -1,35 +1,35 @@
-.input{
-    // min-width: auto;
-    margin-bottom:12px;
-    &__label{
-        display:block;
-        &__disabled {
-            color: rgb(218, 218, 218);
+.input {
+  width: 100%;
+  margin: 0 auto 14px;
+  &__label {
+    display: block;
+    &__disabled {
+      color: rgb(218, 218, 218);
     }
+  }
+  &__field {
+    width: 290px;
+    height: 42px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    &__disabled {
+      border: 2px solid rgb(218, 218, 218);
     }
-    &__field{
-        width: 290px;
-        height: 42px;
-        border: 2px solid grey;
-        border-radius: 5px;
-        text-align:center;
-        &__disabled{
-            border:     2px solid rgb(218, 218, 218);
+    &__error {
+      border: 2px solid red;
     }
-    &__error{
-        border: 2px solid red;
+    &__success {
+      border: 2px solid green;
     }
-    &__success{
-        border: 2px solid green;
-    }
-}
-&__message{
+  }
+  &__message {
     font-size: 12px;
-    &__error{
-        color: red;
+    &__error {
+      color: red;
     }
-    &__success{
-        color: green;
+    &__success {
+      color: green;
     }
-}
+  }
 }

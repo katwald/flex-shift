@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+.nav-bar {
+  background-color: rgb(88, 87, 87);
+  box-shadow: 1px 0px 10px $light-gray;
+  padding: 10px 48px;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: 12px;
+    text-decoration: none;
+    width: 83%;
+    margin: auto;
+  }
+  &__cart {
+    &__icon {
+      position: relative;
+      color: white;
+      font-size: 24px;
+    }
+    &__badge {
+      font-weight: 800;
+      border-radius: 50%;
+      position: absolute;
+      color: white;
+      margin: 4px;
+      top: 4px;
+      font-size: 16px;
+    }
+  }
+  &__user-status {
+    display: flex;
+    column-gap: 12px;
+    font-size: medium;
+    font-weight: 600;
+    align-items: center;
+    color: white;
+  }
+  &__nav {
+    font-weight: 600;
+    font-size: large;
+    a {
+      // border: 2px solid white;
+      padding: 3px 16px;
+      text-decoration: none;
+      color: white;
+    }
+    a.active {
+      border-bottom: 2px solid white;
+    }
+  }
+}

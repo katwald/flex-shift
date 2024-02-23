@@ -1,10 +1,10 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
-import useField from "../hooks/useField";
+import useField from "../../hooks/useField";
 
-import Button from "../common/Button";
-import Input from "../common/Input";
+import Button from "../../common/Button";
+import Input from "../../common/Input";
 
 import "./index.scss";
 
@@ -16,13 +16,13 @@ interface Props {
 const CreateEmployeeForm = () => {
   const dispatch = useDispatch();
 
-  const firstName = useField("name");
-  const lastName = useField("lastName");
-  const contactNumber = useField("contact");
-  const role = useField("role");
-  const email = useField("email");
-  const userName = useField("username");
-  const password = useField("password");
+  // const firstName = useField("name");
+  // const lastName = useField("lastName");
+  // const contactNumber = useField("contact");
+  // const role = useField("role");
+  // const email = useField("email");
+  // const userName = useField("username");
+  // const password = useField("password");
   const handleCreateUser = () => {
     // e.preventDefault();
     // const obj = {
